@@ -1,15 +1,15 @@
-package sumSquare;
+package chapter5;
 
-public class SumSquare {
+public class SumSquare1 {
 	public static void main(String[] args) {
-		double x = 0;
+		double count = 3;
 		double y = 3;
 		double z = 0;
-		while(x <= 33) {
+		while(count <= 33) {
+			y = count;
 			z = Math.pow(y, 2);
-			y += z;
-			System.out.println(z);
-			x++;
+			System.out.println("Cumulation result: " + z);
+			count = count + 3;
 			
 		}
 		
