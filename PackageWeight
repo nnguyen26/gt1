@@ -1,0 +1,27 @@
+package HW1;
+import java.util.Scanner;
+public class lab2 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		double weight = 0;
+		
+		while(weight <= 1.0) {
+			System.out.println("Enter a weights in ounce for letters to mail"
+					+ "out.\nWhen you are done entering, please enter -1 to finish: ");
+			weight = sc.nextDouble();
+			
+			if(weight == -1) {
+				System.out.println("Good Bye");break;}
+			else if(weight <= 1.0 && weight >= -1) {
+				System.out.println("You can use forever Stamp");
+			}
+			else if(weight > 1.0) {
+				System.out.println("You need additional forever stamp");continue;
+			}else {
+				System.out.println("Please enter a valid weight in ounce: ");
+			}
+		}	
+	}
+
+}
