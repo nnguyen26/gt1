@@ -1,6 +1,6 @@
 package chapter5;
 
-public class SumSquare1 {
+public class SumSquare {
 	public static void main(String[] args) {
 		int count = 3;
 		int y = 3;
