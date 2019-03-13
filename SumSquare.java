@@ -11,7 +11,7 @@ public class SumSquare1 {
 			y = count;
 			z = y * y;
 			int z1 = z + result;
-			System.out.println("Cumulation result: " + z1 + " : " + count + " * " + count);
+			System.out.printf("Cumulation result: %-5d%-8s%-6d%-7s%-7d\n",z1, " : ", count, " * ",count);
 			count = count + 3;
 
 			result = z1;
