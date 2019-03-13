@@ -2,17 +2,27 @@ package chapter5;
 
 public class SumSquare1 {
 	public static void main(String[] args) {
-		double count = 3;
-		double y = 3;
-		double z = 0;
-		while(count <= 33) {
-			y = count;
-			z = Math.pow(y, 2);
-			System.out.println("Cumulation result: " + z);
-			count = count + 3;
+		int count = 3;
+		int y = 3;
+		int z = 0;
+		int result = 0;
+		while (count <= 33) {
 			
+			y = count;
+			z = y * y;
+			int z1 = z + result;
+			System.out.println("Cumulation result: " + z1 + " : " + count + " * " + count);
+			count = count + 3;
+
+			result = z1;
+			
+			//result += count;
+			
+			
+
 		}
-		
+		System.out.println("The SUM of Square of multiples of 3 is " + result);
+
 	}
 
 }
